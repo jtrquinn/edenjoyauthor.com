@@ -1,0 +1,26 @@
+{
+  "name": "edenjoyauthor.com",
+  "version": "1.0.0",
+  "description": "naked-wordpress ===============",
+  "homepage": "https://github.com/jtrquinn/edenjoyauthor.com#readme",
+  "bugs": {
+    "url": "https://github.com/jtrquinn/edenjoyauthor.com/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtrquinn/edenjoyauthor.com.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @tailwindcss/cli -i ./tailwind.css -o ./style.css --minify",
+    "dev": "npx @tailwindcss/cli -i ./tailwind.css -o ./style.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.3",
+    "tailwindcss": "^4.0.3"
+  }
+}
