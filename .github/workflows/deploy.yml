@@ -15,11 +15,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy via FTP
-        uses: lukas2511/ftp-deploy-action@master
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.FTP_SERVER }}
+          server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: .  # Deploy the entire repository
-          remote-dir: "/home2/thbbqvmy/edenjoyauthor.com/public_html/wp-content/themes/edenjoyauthor.com"  # Change this to your FTP server path
-          cleanup: true  # Optional: Remove remote files not in repo
+          server-dir: "/home2/thbbqvmy/edenjoyauthor.com/public_html/wp-content/themes/edenjoyauthor.com"  # Change this to your FTP server path
