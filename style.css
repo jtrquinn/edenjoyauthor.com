@@ -708,6 +708,15 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+  .h-\[16rem\] {
+    height: 16rem;
+  }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-auto {
     height: auto;
   }
@@ -740,6 +749,15 @@
   }
   .w-44 {
     width: calc(var(--spacing) * 44);
+  }
+  .w-\[16rem\] {
+    width: 16rem;
+  }
+  .w-\[20rem\] {
+    width: 20rem;
+  }
+  .w-\[30rem\] {
+    width: 30rem;
   }
   .w-full {
     width: 100%;
@@ -876,9 +894,6 @@
   .border-zinc-900\/10 {
     border-color: color-mix(in oklab, var(--color-zinc-900) 10%, transparent);
   }
-  .bg-black {
-    background-color: var(--color-black);
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -945,6 +960,9 @@
   .py-\[calc\(--spacing\(2\)-1px\)\] {
     padding-block: calc(calc(var(--spacing) * 2) - 1px);
   }
+  .pe-12 {
+    padding-inline-end: calc(var(--spacing) * 12);
+  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -991,9 +1009,6 @@
   }
   .text-teal-500 {
     color: var(--color-teal-500);
-  }
-  .text-white {
-    color: var(--color-white);
   }
   .text-zinc-100 {
     color: var(--color-zinc-100);
@@ -1506,24 +1521,6 @@
       &:hover {
         @media (hover: hover) {
           color: var(--color-ej-gold);
-        }
-      }
-    }
-  }
-  .dark\:hover\:text-ej-green {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-ej-green);
-        }
-      }
-    }
-  }
-  .dark\:hover\:text-ej-purple {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-ej-purple);
         }
       }
     }
