@@ -1,0 +1,29 @@
+name: Deploy to FTP
+
+on:
+  push:
+    branches:
+      - main  # Change this if you want to deploy from a different branch
+
+jobs:
+  ftp-deploy:
+    name: Deploy via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Upload Files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: "/path/to/deploy/" # Change this to your target FTP directory
+          exclude: |
+            **/.git*
+            **/.github/*
+            **/node_modules/*
+            **/vendor/*
+            **/tests/*
