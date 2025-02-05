@@ -9,23 +9,22 @@
 		<?php bloginfo('name'); ?> |
 		<?php is_front_page() ? bloginfo('description') : wp_title(''); ?>
 	</title>
-
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
 	<?php wp_head(); ?>
-
 </head>
 
-<body <?php body_class("flex h-full bg-zinc-50 dark:bg-black");
+<body <?php body_class("flex h-full bg-zinc-50 dark:bg-black"); ?>>
 
-?>>
 	<div class="flex w-full">
+
+		<!-- background -->
 		<div class="fixed inset-0 flex justify-center sm:px-8">
 			<div class="flex w-full max-w-7xl lg:px-8">
 				<div class="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20"></div>
 			</div>
 		</div>
+
 		<div class="relative flex w-full flex-col">
 
 			<header class="pointer-events-none relative z-50 flex flex-none flex-col"
@@ -40,16 +39,13 @@
 									<div class="relative">
 										<div class="absolute top-3 left-0 origin-left transition-opacity h-10 w-10 rounded-full bg-white/90 p-0.5 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
 											style="opacity: var(--avatar-border-opacity, 0); transform: var(--avatar-border-transform);">
-										</div><a aria-label="Home"
-											class="block h-16 w-16 origin-left pointer-events-auto" href="/"
-											style="transform: var(--avatar-image-transform);"><img alt=""
-												fetchpriority="high" width="512" height="512" decoding="async"
-												data-nimg="1"
+										</div>
+										<a aria-label="Home" class="block h-16 w-16 origin-left pointer-events-auto"
+											href="/" style="transform: var(--avatar-image-transform);">
+											<img alt=""
 												class="rounded-full bg-zinc-100 object-cover dark:bg-zinc-800 h-16 w-16"
-												sizes="4rem"
-												srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=3840&amp;q=75 3840w"
-												src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Favatar.51a13c67.jpg&amp;w=3840&amp;q=75"
-												style="color: transparent;"></a>
+												src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/435156247_460037106687035_6760039686152109412_n.jpg?stp=cp0_dst-jpg_s60x60_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Mx_pb-YHUCgQ7kNvgFStyzh&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=AXuv8R7E8HuIbZS2VbOP5e2&oh=00_AYAvmzSA5OiT8CEWBqCO0-a9wnkF88J2ODM0JlugPzkZfQ&oe=67A94F3B" />
+										</a>
 									</div>
 								</div>
 							</div>
@@ -68,35 +64,41 @@
 											<div class="pointer-events-auto md:hidden" data-headlessui-state=""><button
 													class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
 													type="button" aria-expanded="false" data-headlessui-state=""
-													id="headlessui-popover-button-:Rbmiqja:">Menu<svg viewBox="0 0 8 6"
-														aria-hidden="true"
+													id="headlessui-popover-button-:Rbmiqja:">
+													Menu
+													<svg viewBox="0 0 8 6" aria-hidden="true"
 														class="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400">
 														<path d="M1.75 1.75 4 4.25l2.25-2.5" fill="none"
 															stroke-width="1.5" stroke-linecap="round"
-															stroke-linejoin="round"></path>
-													</svg></button></div>
+															stroke-linejoin="round">
+														</path>
+													</svg>
+												</button>
+											</div>
 											<div hidden=""
 												style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none">
 											</div>
 											<nav class="pointer-events-auto hidden md:block">
-												<?php wp_nav_menu(array(
+
+												<!-- <?php wp_nav_menu(array(
 													'theme_location' => 'primary',
 													'container' => 'ul',
 													'menu_class' => 'flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10',
-													'add_li_class'=> 'relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400',
-												)); ?>
+													'add_li_class' => 'relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold',
+												)); ?> -->
+
 												<ul
 													class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-													<li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+													<li><a class="relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold"
 															href="/about">About</a></li>
-													<li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-															href="/articles">Articles</a></li>
-													<li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-															href="/projects">Projects</a></li>
-													<li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-															href="/speaking">Speaking</a></li>
-													<li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
-															href="/uses">Uses</a></li>
+													<li><a class="relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold"
+															href="/articles">Books</a></li>
+													<li><a class="relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold"
+															href="/projects">Blog</a></li>
+													<li><a class="relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold"
+															href="/speaking">Shop</a></li>
+													<!-- <li><a class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+															href="/uses">Uses</a></li> -->
 												</ul>
 											</nav>
 										</div>
@@ -129,28 +131,24 @@
 				</div>
 			</header>
 
-			<header id="masthead" class="site-header">
-				<div class="container center">
-
-					<nav class="site-navigation main-navigation">
+			<!-- <header>
+				<div>
+					<nav>
 					</nav>
 				</div>
-				<div class="center">
-
-					<div id="brand">
-						<h1 class="site-title">
-							<a href="<?php echo esc_url(home_url('/')); // Link to the home page ?>"
-								title="<?php echo esc_attr(get_bloginfo('name', 'display')); // Title it with the blog name ?>"
-								rel="home"><?php bloginfo('name'); // Display the blog name ?></a>
+				<div>
+					<div>
+						<h1>
+							<a href="<?php echo esc_url(home_url('/')); ?>"
+								title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>"
+								rel="home"><?php bloginfo('name'); ?>
+							</a>
 						</h1>
-						<h4 class="site-description">
-							<?php bloginfo('description'); // Display the blog description, found in General Settings ?>
+						<h4>
+							<?php bloginfo('description'); ?>
 						</h4>
-					</div><!-- /brand -->
+					</div>
+				</div>
+			</header> -->
 
-					<div class="clear"></div>
-				</div><!--/container -->
-
-			</header><!-- #masthead .site-header -->
-
-			<main class="main-fluid"><!-- start the page containter -->
+			<main>

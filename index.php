@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div>
-	<main>
+	<div>
 
 		<?php if (have_posts()): ?>
 			<?php while (have_posts()):
@@ -61,7 +61,7 @@
 			</article>
 
 		<?php endif; ?>
-	</main>
+	</div>
 </div>
 
 <?php get_footer(); ?>
