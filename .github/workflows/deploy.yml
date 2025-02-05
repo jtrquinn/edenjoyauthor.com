@@ -14,16 +14,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Upload Files via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+      - name: Deploy via FTP
+        uses: lukas2511/ftp-deploy-action@master
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          host: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: "/path/to/deploy/" # Change this to your target FTP directory
-          exclude: |
-            **/.git*
-            **/.github/*
-            **/node_modules/*
-            **/vendor/*
-            **/tests/*
+          local-dir: .  # Deploy the entire repository
+          remote-dir: "/home2/thbbqvmy/edenjoyauthor.com/public_html/wp-content/themes/edenjoyauthor.com"  # Change this to your FTP server path
+          cleanup: true  # Optional: Remove remote files not in repo
