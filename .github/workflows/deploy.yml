@@ -21,4 +21,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: "./"  # Deploy the entire repository
-          server-dir: "/home2/thbbqvmy/edenjoyauthor.com/public_html/wp-content/themes/edenjoyauthor.com/"  # Change this to your FTP server path
+          server-dir: "/edenjoyauthor.com/public_html/wp-content/themes/edenjoyauthor.com/"  # Change this to your FTP server path
