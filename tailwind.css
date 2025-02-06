@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -31,7 +33,11 @@
   --text-9xl--line-height: 1;
   --color-ej-green: oklch(50.82% 0.0762 119.86);
   --color-dark-green: oklch(31.18% 0.0529 129.56);
-  --color-ej-cream: oklch(98.14% 0.0342 99.83);
+  --color-ej-parchment: oklch(91.69% 0.047 80.79);
   --color-ej-purple: oklch(43.87% 0.1059 286.73);
   --color-ej-gold: oklch(76.65% 0.1387 91.06);
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
 }

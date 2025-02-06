@@ -11,10 +11,11 @@
 	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class("flex h-full bg-ej-cream/50 dark:bg-black"); ?>>
+<body <?php body_class("flex h-full bg-ej-parchment/50 dark:bg-black"); ?>>
 
 	<div class="flex w-full">
 
@@ -29,7 +30,7 @@
 
 			<header class="pointer-events-none relative z-50 flex flex-none flex-col"
 				style="height:var(--header-height);margin-bottom:var(--header-mb)">
-				<div class="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"></div>
+				<!-- <div class="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"></div> -->
 				<div class="top-0 z-10 h-16 pt-6" style="position:var(--header-position)">
 					<div class="sm:px-8 top-(--header-top,--spacing(6)) w-full"
 						style="position:var(--header-inner-position)">
@@ -39,7 +40,8 @@
 									<div class="relative flex gap-4">
 										<div class="flex flex-1"></div>
 										<div class="flex flex-1 justify-end md:justify-center">
-											<div class="pointer-events-auto md:hidden" data-headlessui-state=""><button
+											<div class="pointer-events-auto md:hidden" data-headlessui-state="">
+												<button
 													class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
 													type="button" aria-expanded="false" data-headlessui-state=""
 													id="headlessui-popover-button-:Rbmiqja:">
