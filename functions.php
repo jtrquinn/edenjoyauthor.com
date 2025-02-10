@@ -1,6 +1,6 @@
 <?php
 
-define("TAILWIND_CLASSES", "mb-7 overflow-hidden gap-6 max-w-xs px-2.5 lg:max-w-none lg:pl-20 lg:order-first lg:row-span-2 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12");
+define("TAILWIND_CLASSES", "mb-7 rotate-3 overflow-hidden gap-6 max-w-xs px-2.5 lg:max-w-none lg:pl-20 lg:order-first lg:row-span-2 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12");
 define('NAKED_VERSION', 1.0);
 
 /*-----------------------------------------------------------------------------------*/
