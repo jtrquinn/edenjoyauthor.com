@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php $cssClass = 'gap-6'; ?>
 
 <div class="flex-auto">
 	<div class="sm:px-8 mt-9">

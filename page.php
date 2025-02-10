@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php $cssClass = 'mb-7 overflow-hidden'; ?>
 
 <div class="sm:px-8 mt-16 sm:mt-32">
 	<div class="mx-auto w-full max-w-7xl lg:px-8">
