@@ -32,7 +32,7 @@
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
   --color-ej-green: oklch(50.82% 0.0762 119.86);
-  --color-dark-green: oklch(31.18% 0.0529 129.56);
+  --color-ej-dark-green: oklch(31.18% 0.0529 129.56);
   --color-ej-parchment: oklch(91.69% 0.047 80.79);
   --color-ej-purple: oklch(43.87% 0.1059 286.73);
   --color-ej-gold: oklch(76.65% 0.1387 91.06);

@@ -1,6 +1,6 @@
 <?php
 
-define("TAILWIND_CLASSES", "mb-7 rotate-3 overflow-hidden gap-6 max-w-xs px-2.5 lg:max-w-none lg:pl-20 lg:order-first lg:row-span-2 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12");
+define("TAILWIND_CLASSES", "mb-7 rotate-3 overflow-hidden gap-6 max-w-xs px-2.5 lg:max-w-none lg:pl-20 lg:order-first lg:row-span-2 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 sm:px-8 mt-24 md:mt-28 mx-auto w-full max-w-7xl lg:px-8 relative px-4 lg:px-12 max-w-2xl lg:max-w-5xl max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2");
 define('NAKED_VERSION', 1.0);
 
 /*-----------------------------------------------------------------------------------*/
@@ -56,23 +56,24 @@ add_action('widgets_init', 'naked_register_sidebars');
 
 function naked_scripts()
 {
-
 	// get the theme directory style.css and link to it in the header
 	wp_enqueue_style('style.css', get_stylesheet_directory_uri() . '/style.css');
 	wp_enqueue_script('theme-switcher.js', get_stylesheet_directory_uri() . '/scripts/theme-switcher.js');
-
-
 }
 add_action('wp_enqueue_scripts', 'naked_scripts'); // Register this fxn and allow Wordpress to call it automatcally in the header
 
-function add_additional_class_on_li($classes, $item, $args)
-{
-	if (isset($args->add_li_class)) {
-		$classes[] = $args->add_li_class;
-	}
-	return $classes;
+// Updated filter to support "item_class" parameter for wp_nav_menu
+function add_additional_class_on_li($classes, $item, $args, $depth) {
+    if (isset($args->item_class)) {
+        $classes[] = $args->item_class;
+    }
+    if (isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
 }
 add_filter('nav_menu_css_class', 'add_additional_class_on_li', 10, 4);
+
 
 function add_google_fonts()
 {
@@ -124,7 +125,7 @@ function social_icon_svg_shortcode($atts)
 		return $content;
 	} else {
 		$content = str_replace('{{cssClass}}', 'group flex text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500', $content);
-		$content = str_replace('</svg>', '</svg><span class="ml-4">'. ($labels[$atts['name']] ?? '') .'</span>', $content);
+		$content = str_replace('</svg>', '</svg><span class="ml-4">' . ($labels[$atts['name']] ?? '') . '</span>', $content);
 		return $content;
 	}
 }
@@ -205,8 +206,8 @@ function custom_gallery_render_callback($attributes)
 		return '<p>No images selected.</p>';
 	}
 
-	$output = '<div class="h-[25rem]">';
-	$output .= '<div class="h-[25rem] w-full absolute left-0">';
+	$output = '<div class="h-[20rem] md:h-[24rem]">';
+	$output .= '<div class="h-[20rem] md:h-[24rem] w-full absolute left-0">';
 	$output .= '<div class="mt-16 sm:mt-20">';
 	$output .= '<div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">';
 	$index = 0;

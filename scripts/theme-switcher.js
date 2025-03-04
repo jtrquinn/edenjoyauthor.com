@@ -1,16 +1,21 @@
 (function () {
-    function toggleTheme() {
-        const lightClass = 'light';
-        const darkClass = 'dark';
-        const $html = document.querySelector('html');
-        const isLight = $html.className.includes(lightClass);
+    function applyTheme(theme) {
+        const $html = document.documentElement;
+        // Remove any previously set theme classes and add the new one
+        $html.classList.remove('light', 'dark');
+        $html.classList.add(theme);
+        $html.style.colorScheme = theme;
+    }
 
-        if (isLight) {
-            $html.className = $html.className.replace(lightClass, darkClass);
-            $html.style.colorScheme = darkClass;
+    function toggleTheme() {
+        const $html = document.documentElement;
+        // Toggle theme based on current state
+        if ($html.classList.contains('light')) {
+            applyTheme('dark');
+            localStorage.setItem('theme', 'dark');
         } else {
-            $html.className = $html.className.replace(darkClass, lightClass);
-            $html.style.colorScheme = lightClass;
+            applyTheme('light');
+            localStorage.setItem('theme', 'light');
         }
     }
 
@@ -22,10 +27,14 @@
         }
     }
 
-    documentReady(()=>{
+    documentReady(() => {
+        // On page load, check localStorage for a saved theme preference.
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(storedTheme);
+
         const $themeSwitcher = document.querySelector('#themeSwitcher');
-        $themeSwitcher.addEventListener('click', ()=>{
-            toggleTheme();
-        });
+        if ($themeSwitcher) {
+            $themeSwitcher.addEventListener('click', toggleTheme);
+        }
     });
 })();
