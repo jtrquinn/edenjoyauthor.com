@@ -1,6 +1,6 @@
 </main><!-- / end page container, begun in the header -->
 
-<footer class="mt-32 flex-none">
+<footer class="mt-12 flex-none">
 	<div class="sm:px-8">
 		<div class="mx-auto w-full max-w-7xl lg:px-8">
 			<div class="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
