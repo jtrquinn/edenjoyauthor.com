@@ -17,7 +17,7 @@
 
 <body <?php body_class("flex h-full bg-ej-parchment/50 dark:bg-black"); ?>>
 
-	<div class="flex w-full">
+	<div class="w-full">
 
 		<!-- background -->
 		<div class="fixed inset-0 flex justify-center sm:px-8">
