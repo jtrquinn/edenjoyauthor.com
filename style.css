@@ -697,9 +697,6 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
   .h-\[20rem\] {
     height: 20rem;
   }
@@ -708,12 +705,6 @@
   }
   .h-full {
     height: 100%;
-  }
-  .h-screen {
-    height: 100vh;
-  }
-  .min-h-screen {
-    min-height: 100vh;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -948,27 +939,6 @@
   .bg-zinc-800 {
     background-color: var(--color-zinc-800);
   }
-  .bg-\[url\(\'https\:\/\/edenjoyauthor\.com\/wp-content\/uploads\/2025\/02\/book-mock\.png\'\)\] {
-    background-image: url('https://edenjoyauthor.com/wp-content/uploads/2025/02/book-mock.png');
-  }
-  .bg-\[url\(https\:\/\/edenjoyauthor\.com\/wp-content\/uploads\/2025\/02\/book-mock\.png\)\] {
-    background-image: url(https://edenjoyauthor.com/wp-content/uploads/2025/02/book-mock.png);
-  }
-  .bg-cover {
-    background-size: cover;
-  }
-  .bg-fixed {
-    background-attachment: fixed;
-  }
-  .bg-center {
-    background-position: center;
-  }
-  .bg-top {
-    background-position: top;
-  }
-  .bg-no-repeat {
-    background-repeat: no-repeat;
-  }
   .fill-ej-dark-green {
     fill: var(--color-ej-dark-green);
   }
@@ -1105,6 +1075,9 @@
   .tracking-tight {
     --tw-tracking: var(--tracking-tight);
     letter-spacing: var(--tracking-tight);
+  }
+  .text-ej-dark-green {
+    color: var(--color-ej-dark-green);
   }
   .text-ej-gold {
     color: var(--color-ej-gold);
@@ -1507,6 +1480,11 @@
       padding-inline: calc(var(--spacing) * 12);
     }
   }
+  .lg\:px-24 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 24);
+    }
+  }
   .lg\:ps-0 {
     @media (width >= 64rem) {
       padding-inline-start: calc(var(--spacing) * 0);
@@ -1674,6 +1652,15 @@
       &:hover {
         @media (hover: hover) {
           color: var(--color-ej-gold);
+        }
+      }
+    }
+  }
+  .dark\:hover\:text-ej-green {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-ej-green);
         }
       }
     }
