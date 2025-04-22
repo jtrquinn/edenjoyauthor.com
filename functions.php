@@ -108,7 +108,7 @@ function social_icon_svg_shortcode($atts)
 		'instagram' => 'https://www.instagram.com/eden.joy.writes/',
 		'goodreads' => 'https://www.goodreads.com/user/show/126564904-eden-joy',
 		'etsy' => 'https://www.etsy.com/shop/StoryTreasuresShop?ref=shop_sugg_market',
-		'email' => 'mailto:edenjoybwrites@gmail.com?subject=Saying+Hello!'
+		'email' => 'mailto:eden@edenjoyauthor.com?subject=Saying+Hello!'
 	);
 
 	$labels = array(
@@ -116,7 +116,7 @@ function social_icon_svg_shortcode($atts)
 		'instagram' => 'Follow on Instagram',
 		'goodreads' => 'Add me on Goodreads',
 		'etsy' => 'Checkout my Etsy store',
-		'email' => 'edenjoybwrites@gmail.com'
+		'email' => 'eden@edenjoyauthor.com'
 	);
 
 	$content = '<a class="{{cssClass}}" href="' . ($links[$atts['name']] ?? '') . '" aria-label="' . ($labels[$atts['name']] ?? '') . '" target="_blank" rel="noopener noreferrer">' . ($icons[$atts['name']] ?? '') . '</a>';
