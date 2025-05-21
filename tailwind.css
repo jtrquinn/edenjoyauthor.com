@@ -34,8 +34,7 @@
   --color-ej-teal: oklch(0.6332 0.038 182.72);
   --color-ej-blue: oklch(0.3737 0.0377 214.25);
   --color-ej-dark-teal: oklch(0.4972 0.036 198.57);
-  --color-ej-gold: oklch(0.7744 0.0688 99.32);
-  --color-ej-parchment: oklch(91.69% 0.047 80.79)
+  --color-ej-gold: oklch(0.7744 0.0688 99.32)
 }
 
 body {
