@@ -15,7 +15,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class("flex h-full bg-ej-gold/50 dark:bg-black"); ?>>
+<body <?php body_class("flex h-full bg-ej-teal/50 dark:bg-dark-teal"); ?>>
 
 	<div class="w-full">
 
