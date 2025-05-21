@@ -62,7 +62,7 @@
 													'theme_location' => 'primary',
 													'container' => 'ul',
 													'menu_class' => 'flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 ring-1 shadow-lg shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10',
-													'add_li_class' => 'relative block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold',
+													'add_li_class' => 'relative block px-3 py-2 transition hover:text-ej-teal dark:hover:text-ej-gold',
 												)); ?>
 											</nav>
 										</div>
@@ -105,7 +105,7 @@
 						'theme_location' => 'primary',
 						'container' => 'nav',
 						'menu_class' => 'flex flex-col space-y-2 text-sm font-medium text-zinc-800 dark:text-zinc-200',
-						'add_li_class' => 'block px-3 py-2 transition hover:text-ej-green dark:hover:text-ej-gold',
+						'add_li_class' => 'block px-3 py-2 transition hover:text-ej-teal dark:hover:text-ej-gold',
 					)); ?>
 				</div>
 			</header>

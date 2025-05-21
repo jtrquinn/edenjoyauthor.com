@@ -31,7 +31,7 @@
   --text-8xl--line-height: 1;
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
-  --color-ej-green: oklch(50.82% 0.0762 119.86);
+  --color-ej-teal: #28464d;
   --color-ej-dark-green: oklch(31.18% 0.0529 129.56);
   --color-ej-parchment: oklch(91.69% 0.047 80.79);
   --color-ej-purple: oklch(43.87% 0.1059 286.73);
@@ -59,11 +59,11 @@ body {
 }
 
 .subscription-form__input--name {
-  @apply min-w-0 w-full flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-ej-green focus:ring-4 focus:ring-ej-green/10 focus:outline-hidden sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-ej-gold dark:focus:ring-ej-gold/10;
+  @apply min-w-0 w-full flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-ej-teal focus:ring-4 focus:ring-ej-teal/10 focus:outline-hidden sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-ej-gold dark:focus:ring-ej-gold/10;
 }
 
 .subscription-form__input--email {
-  @apply min-w-0 w-full flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-ej-green focus:ring-4 focus:ring-ej-green/10 focus:outline-hidden sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-ej-gold dark:focus:ring-ej-gold/10;
+  @apply min-w-0 w-full flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(--spacing(2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-ej-teal focus:ring-4 focus:ring-ej-teal/10 focus:outline-hidden sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-ej-gold dark:focus:ring-ej-gold/10;
 }
 
 .subscription-form__btn {
