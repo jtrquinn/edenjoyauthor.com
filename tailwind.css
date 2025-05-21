@@ -31,8 +31,8 @@
   --text-8xl--line-height: 1;
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
-  --color-ej-teal: oklch(0.3737 0.0377 214.25);
-  --color-ej-dark-green: oklch(31.18% 0.0529 129.56);
+  --color-ej-teal: oklch(0.6332 0.038 182.72);
+  --color-ej-blue: oklch(0.3737 0.0377 214.25);
   --color-ej-parchment: oklch(91.69% 0.047 80.79);
   --color-ej-purple: oklch(43.87% 0.1059 286.73);
   --color-ej-gold: oklch(76.65% 0.1387 91.06);
