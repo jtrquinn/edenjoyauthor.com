@@ -33,9 +33,9 @@
   --text-9xl--line-height: 1;
   --color-ej-teal: oklch(0.6332 0.038 182.72);
   --color-ej-blue: oklch(0.3737 0.0377 214.25);
-  --color-ej-parchment: oklch(91.69% 0.047 80.79);
-  --color-ej-purple: oklch(43.87% 0.1059 286.73);
-  --color-ej-gold: oklch(76.65% 0.1387 91.06);
+  --color-ej-dark-teal: oklch(0.4972 0.036 198.57);
+  --color-ej-gold: oklch(0.7744 0.0688 99.32);
+  --color-ej-parchment: oklch(91.69% 0.047 80.79)
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 }
 
 .subscription-form > div > form > div:last-child {
-  @apply absolute mt-4 mb-0 mx-0 rounded-md w-[19rem] text-white border-0 bg-ej-purple top-[73.5%]
+  @apply absolute mt-4 mb-0 mx-0 rounded-md w-[19rem] text-white border-0 bg-ej-blue top-[73.5%]
 }
 
 .subscription-form__input--name {
