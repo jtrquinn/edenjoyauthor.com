@@ -130,4 +130,4 @@
 				</div>
 			</header> -->
 
-			<main class="pt-12 md:pt-16">
+			<main class="pt-12 md:pt-6">
