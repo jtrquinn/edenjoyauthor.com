@@ -40,7 +40,7 @@
 											</div>
 										</div>
 										<div class="flex justify-center pb-4">
-											<img src="./assets/VoF-banner.png"
+											<img src="vof-banner.png"
 												alt="VoF Banner" class="">
 										</div>
 									</div>
