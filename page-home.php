@@ -10,7 +10,7 @@
 						<div class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
 							<?php the_content(); ?>
 
-							<div class="relative flex flex-col justify-center gap-10 my-12">
+							<!-- <div class="relative flex flex-col justify-center gap-10 my-12">
 								<div class="absolute left-1/2 transform -translate-x-1/2 w-screen h-full bg-ej-blue z-0">
 								</div>
 								<div class="flex flex-col items-center pt-12 px-4 lg:px-24 gap-5 z-10 text-zinc-100">
@@ -41,7 +41,7 @@
 									<img src="<?php echo get_template_directory_uri(); ?>/vof-banner.png" alt="VoF Banner"
 										class="w-full h-auto">
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					<?php endwhile; ?>
