@@ -10,7 +10,7 @@
 						<div class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
 							<?php the_content(); ?>
 
-							<div class="flex flex-col space-y-8 sm:pt-30">
+							<!-- <div class="flex flex-col space-y-8 sm:pt-30">
 								<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center">
 									<div class="flex justify-center pb-4">
 										<img src="https://edenjoyauthor.com/wp-content/uploads/2025/02/book-mock.png" alt=""
@@ -85,7 +85,7 @@
 								<div class="flex justify-center p-4">
 									<img src="/vof-banner.png" alt="VoF Banner" class="w-full h-auto">
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					<?php endwhile; ?>
